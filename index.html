@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Command List</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Command List</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#admin">Admin</a></li>
+      <li><a href="#info">Info</a></li>
+      <li><a href="#leaderboard">Leaderboard</a></li>
+      <li><a href="#mod">Mod</a></li>
+      <li><a href="#fun">Fun</a></li>
+      <li><a href="#voicechat">Voicechat</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="admin">
+      <h2>Admin</h2>
+      <ul>
+        <li><strong>owner</strong> []: Returns the owner.</li>
+        <li><strong>load</strong> [cog name]: Loads an extension.</li>
+        <li><strong>unload</strong> [cog name]: Unloads an extension.</li>
+        <li><strong>reload</strong> [cog name]: Reloads an extension.</li>
+        <li><strong>reloadall</strong> []: Reloads all extensions.</li>
+        <li><strong>reloadutils</strong> [util name]: Reloads utils.</li>
+        <li><strong>change playing</strong> [status]: Change the status of the bot.</li>
+        <li><strong>change username</strong> [username]: Change the username of the bot.</li>
+        <li><strong>change nickname</strong> [nickname]: Change the nickname of the bot.</li>
+        <li><strong>change avatar</strong> [picture url/file]: Change the avatar of the bot.</li>
+      </ul>
+    </section>
+
+    <section id="info">
+      <h2>Info</h2>
+      <ul>
+        <li><strong>avatar</strong> [member]: Displays the current and past profile pictures of members, both global and server-specific, since joining the server. Option to delete the avatar if it's the member who used that avatar.</li>
+        <li><strong>serverinfo</strong> []: Returns information about the current server. Option to display icon and banner of server.</li>
+        <li><strong>userinfo</strong> [member]: Returns information about the user.</li>
+        <li><strong>names</strong> [member]: Returns the previous usernames/nicknames of the user.</li>
+        <li><strong>banner</strong> [member]: Returns the banner of the user.</li>
+        <li><strong>collectavatars</strong> []: Stores avatars of members in the current guild.</li>
+        <li><strong>about</strong> []: Returns stats and information about the bot.</li>
+        <li><strong>ping</strong> []: Returns the ping of the bot.</li>
+        <li><strong>invite</strong> []: Returns the invite link for the current server.</li>
+        <li><strong>myservers</strong> []: Prints invite links to the bot's servers in the console.</li>
+        <li><strong>github</strong> []: Returns the link to this GitHub repository.</li>
+        <li><strong>covid</strong> [country]: Returns COVID statistics of a country.</li>
+        <li><strong>country</strong> [country]: Returns general information about a country.</li>
+      </ul>
+    </section>
+
+    <section id="leaderboard">
+      <h2>Leaderboard</h2>
+      <ul>
+        <li><strong>crowns</strong> [member]: Displays members with the most crowns. A crown is earned for every day the member sent the most messages.</li>
+        <li><strong>age</strong> []: Displays the youngest or oldest members based on a criteria. [by registration date] [by server join date]</li>
+        <li><strong>chat</strong> [member]: Displays members with the most messages in selected timeframe. [current week] [current month] [current year] [alltime]</li>
+        <li><strong>mentions</strong> [member]: Displays mention leaderboard and stats of the server and member. [server-wide most mentions] [Tagged by (member)] [(member) Tagged]</li>
+        <li><strong>serverpeak</strong> []: Displays timeframes where most messages were sent in the server. [days] [weeks] [months] [years]</li>
+        <li><strong>userpeak</strong> [member]: Displays timeframes where a member sent the most messages in the server. [days] [weeks] [months] [years]</li>
+      </ul>
+    </section>
+
+    <section id="mod">
+      <h2>Mod</h2>
+      <ul>
+        <li><strong>kick</strong> [member]: Kicks a member from the server.</li>
+        <li><strong>nickname</strong> [member]: Changes the nickname of a member.</li>
+        <li><strong>ban</strong> [member]: Bans a member from the server.</li>
+        <li><strong>massban</strong> [member, member, ..]: Bans several members from the server.</li>
+        <li><strong>unban</strong> [member.id]: Unbans a user from the server.</li>
+        <li><strong>prune embeds</strong> [count]: Removes a certain number of recently sent embeds in the chat.</li>
+        <li><strong>prune files</strong> [count]: Removes a certain number of recently sent files in the chat.</li>
+        <li><strong>prune mentions</strong> [count]: Removes a certain number of recently sent mentions in the chat.</li>
+        <li><strong>prune images</strong> [count]: Removes a certain number of recently sent images in the chat.</li>
+        <li><strong>prune all</strong> [count]: Removes every recently sent message.</li>
+        <li><strong>prune user</strong> [count]: Removes a certain number of recently sent messages by a member.</li>
+        <li><strong>prune contains</strong> [count]: Removes a certain number of recently sent messages that contain a phrase.</li>
+        <li><strong>prune bots</strong> [count]: Removes a certain number of recently sent messages by bots.</li>
+        <li><strong>prune users</strong> [count]: Removes a certain number of recently sent messages by users.</li>
+        <li><strong>prune reactions</strong> [count]: Removes a certain number of recently added reactions.</li>
+      </ul>
+    </section>
+
+    <section id="fun">
+      <h2>Fun</h2>
+      <ul>
+        <li><strong>network</strong> [member]: Returns the most frequent chat encounters of a member graphically. The numbers on the graph indicate the number of times that a member and the other person chatted within the same 5-minute time frame.</li>
+        <li><strong>wordcloud</strong> [member, min word length]: Returns a wordcloud that shows the most frequently used words by a member graphically.</li>
+        <li><strong>wordcloudserver</strong> [min word length]: Returns a wordcloud that shows the most frequently used words in the server graphically.</li>
+        <li><strong>said</strong> [word]: Returns members who most frequently used the word.</li>
+        <li><strong>rewind</strong> [member, year]: Returns an embed with clickable rewind pictures and stats of a year. The embed contains 6 pictures that display the most notable member chat stats of a particular year.</li>
+        <li><strong>rewindserver</strong> [year]: Returns an embed with clickable rewind pictures and stats of a year. The embed contains 6 pictures that display the most notable server chat stats of a particular year.</li>
+        <li><strong>quote</strong> [member, word/phrase]: Returns a random message (by a member) that contains a certain phrase or word.</li>
+        <li><strong>snipe</strong> [member]: Returns the last deleted message (by a member).</li>
+        <li><strong>snip</strong> [member]: Returns the last edited message (by a member).</li>
+      </ul>
+    </section>
+
+    <section id="voicechat">
+      <h2>Voicechat</h2>
+      <ul>
+        <li><strong>massmove</strong> [voice channel]: Moves members in the current channel to a certain channel.</li>
+        <li><strong>massmoveall</strong> [voice channel]: Moves all members who are in a voice channel to a certain channel.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
