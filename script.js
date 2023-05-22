@@ -1,23 +1,21 @@
-// Function to toggle dark mode
-function toggleDarkMode() {
-  const body = document.body;
-  body.classList.toggle('dark-mode');
-}
+// Smooth scrolling for table of contents links
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll(".sidebar a");
 
-// Function to handle button click
-function handleClick() {
-  const button = document.getElementById('toggle-dark-mode');
-  button.addEventListener('click', toggleDarkMode);
-}
+  for (const link of links) {
+    link.addEventListener("click", smoothScroll);
+  }
 
-// Function to display a message on page load
-function showMessage() {
-  const message = 'Welcome to the Fancy Website!';
-  console.log(message);
-}
+  function smoothScroll(event) {
+    event.preventDefault();
+    const targetId = event.target.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
 
-// Call the functions on page load
-document.addEventListener('DOMContentLoaded', function () {
-  handleClick();
-  showMessage();
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  }
 });
