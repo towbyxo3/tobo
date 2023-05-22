@@ -1,0 +1,155 @@
+/* CSS code for the header */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #1f1f1f;
+    padding: 10px;
+    z-index: 100;
+}
+
+.header h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Existing CSS code */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 50px;
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.container {
+    margin: 20px;
+}
+
+.search-bar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 100;
+}
+
+.search-input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333333;
+    color: #ffffff;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.chapter-bar {
+    position: sticky;
+    top: 80px; /* Adjust top value as needed */
+    right: 0;
+    background-color: #333333;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    outline: 2px solid #ffa31a;
+}
+
+.chapter-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.chapter-list li {
+    margin: 10px;
+}
+
+.chapter-list li a {
+    color: #ffa31a;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+}
+
+.chapter-list li a:hover {
+    color: #ff6600;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    text-align: left;
+    font-size: 25px;
+    border: 1px solid #333333;
+    padding: 15px;
+}
+
+th {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #333333;
+}
+
+tr:hover {
+    text-decoration: underline;
+}
+
+.chapter {
+    font-weight: bold;
+    background-color: #555555;
+    color: #ffa31a;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.command-row {
+    transition: background-color 0.3s ease;
+
+}
+
+.command-cell {
+    font-size: 20px;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    color:  #91bbff;
+}
+
+.command-cell:hover {
+    background-color: transparent;
+    cursor: default;
+}
+
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    outline: 2px solid  #0096FF;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-to-top-btn.show {
+    display: block;
+}

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Command List</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Command List</h1>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Search command...">
+        <button class="clear-search-btn">&times;</button>
+    </div>
+
+    <div class="chapter-bar">
+        <ul class="chapter-list">
+            
+                <li><a href="#admin">Admin</a></li>
+            
+                <li><a href="#info">Info</a></li>
+            
+                <li><a href="#leaderboard">Leaderboard</a></li>
+            
+                <li><a href="#mod">Mod</a></li>
+            
+                <li><a href="#fun">Fun</a></li>
+            
+                <li><a href="#voicechat">Voicechat</a></li>
+            
+        </ul>
+    </div>
+
+    <table>
+        <tr>
+            <th style="width: 10%;">Command</th>
+            <th style="width: 10%;">Arguments</th>
+            <th style="width: 60%;">Description</th>
+        </tr>
+        
+            <tr id="admin">
+                <td colspan="3" class="chapter">Admin</td>
+            </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">owner</td>
+                    <td class="argument-cell">
+                        
+                            &nbsp;
+                        
+                    </td>
+                    <td>Returns the owner.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">load</td>
+                    <td class="argument-cell">
+                        
+                            cog name
+                        
+                    </td>
+                    <td>Loads an extension.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">unload</td>
+                    <td class="argument-cell">
+                        
+                            cog name
+                        
+                    </td>
+                    <td>Unloads an extension.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">reload</td>
+                    <td class="argument-cell">
+                        
+                            cog name
+                        
+                    </td>
+                    <td>Reloads an extension.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">reloadall</td>
+                    <td class="argument-cell">
+                        
+                            &nbsp;
+                        
+                    </td>
+                    <td>Reloads all extensions.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">reloadutils</td>
+                    <td class="argument-cell">
+                        
+                            util name
+                        
+                    </td>
+                    <td>Reloads utils.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">change playing</td>
+                    <td class="argument-cell">
+                        
+                            status
+                        
+                    </td>
+                    <td>Change the status of the bot.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">change username</td>
+                    <td class="argument-cell">
+                        
+                            username
+                        
+                    </td>
+                    <td>Change the username of the bot.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">change nickname</td>
+                    <td class="argument-cell">
+                        
+                            nickname
+                        
+                    </td>
+                    <td>Change the nickname of the bot.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">change avatar</td>
+                    <td class="argument-cell">
+                        
+                            picture url/file
+                        
+                    </td>
+                    <td>Change the avatar of the bot.</td>
+                </tr>
+            
+        
+            <tr id="info">
+                <td colspan="3" class="chapter">Info</td>
+            </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">avatar</td>
+                    <td class="argument-cell">
+                        
+                            member
+                        
+                    </td>
+                    <td>Displays the current and past profile pictures of members.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">serverinfo</td>
+                    <td class="argument-cell">
+                        
+                            &nbsp;
+                        
+                    </td>
+                    <td>Returns information about the current server.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">userinfo</td>
+                    <td class="argument-cell">
+                        
+                            member
+                        
+                    </td>
+                    <td>Returns information about the user.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">names</td>
+                    <td class="argument-cell">
+                        
+                            member
+                        
+                    </td>
+                    <td>Returns the previous usernames/nicknames of the user.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">banner</td>
+                    <td class="argument-cell">
+                        
+                            member
+                        
+                    </td>
+                    <td>Returns the banner of the user.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">collectavatars</td>
+                    <td class="argument-cell">
+                        
+                            &nbsp;
+                        
+                    </td>
+                    <td>Stores avatars of members in the current guild.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">about</td>
+                    <td class="argument-cell">
+                        
+                            &nbsp;
+                        
+                    </td>
+                    <td>Returns stats and information about the bot.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">ping</td>
+                    <td class="argument-cell">
+                        
+                            &nbsp;
+                        
+                    </td>
+                    <td>Returns the ping of the bot.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">invite</td>
+                    <td class="argument-cell">
+                        
+                            &nbsp;
+                        
+                    </td>
+                    <td>Returns the invite link for the current server.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">myservers</td>
+                    <td class="argument-cell">
+                        
+                            &nbsp;
+                        
+                    </td>
+                    <td>Prints invite links to the bot&#39;s servers in the console.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">github</td>
+                    <td class="argument-cell">
+                        
+                            &nbsp;
+                        
+                    </td>
+                    <td>Returns the link to this GitHub repository.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">covid</td>
+                    <td class="argument-cell">
+                        
+                            country
+                        
+                    </td>
+                    <td>Returns COVID statistics of a country.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">country</td>
+                    <td class="argument-cell">
+                        
+                            country
+                        
+                    </td>
+                    <td>Returns general information about a country.</td>
+                </tr>
+            
+        
+            <tr id="leaderboard">
+                <td colspan="3" class="chapter">Leaderboard</td>
+            </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">crowns</td>
+                    <td class="argument-cell">
+                        
+                            member
+                        
+                    </td>
+                    <td>Displays members with the most crowns.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">age</td>
+                    <td class="argument-cell">
+                        
+                            &nbsp;
+                        
+                    </td>
+                    <td>Displays the youngest or oldest members based on a criteria.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">chat</td>
+                    <td class="argument-cell">
+                        
+                            member
+                        
+                    </td>
+                    <td>Displays members with the most messages in selected timeframe.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">mentions</td>
+                    <td class="argument-cell">
+                        
+                            member
+                        
+                    </td>
+                    <td>Displays mention leaderboard and stats of the server and member.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">serverpeak</td>
+                    <td class="argument-cell">
+                        
+                            &nbsp;
+                        
+                    </td>
+                    <td>Displays timeframes where most messages were sent in the server.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">userpeak</td>
+                    <td class="argument-cell">
+                        
+                            member
+                        
+                    </td>
+                    <td>Displays timeframes where a member sent the most messages in the server.</td>
+                </tr>
+            
+        
+            <tr id="mod">
+                <td colspan="3" class="chapter">Mod</td>
+            </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">kick</td>
+                    <td class="argument-cell">
+                        
+                            member
+                        
+                    </td>
+                    <td>Kicks a member from the server.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">nickname</td>
+                    <td class="argument-cell">
+                        
+                            member
+                        
+                    </td>
+                    <td>Changes the nickname of a member.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">ban</td>
+                    <td class="argument-cell">
+                        
+                            member
+                        
+                    </td>
+                    <td>Bans a member from the server.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">massban</td>
+                    <td class="argument-cell">
+                        
+                            member, member, ..
+                        
+                    </td>
+                    <td>Bans several members from the server.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">unban</td>
+                    <td class="argument-cell">
+                        
+                            member.id
+                        
+                    </td>
+                    <td>Unbans a user from the server.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">prune embeds</td>
+                    <td class="argument-cell">
+                        
+                            count
+                        
+                    </td>
+                    <td>Removes a certain number of recently sent embeds in the chat.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">prune files</td>
+                    <td class="argument-cell">
+                        
+                            count
+                        
+                    </td>
+                    <td>Removes a certain number of recently sent files in the chat.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">prune mentions</td>
+                    <td class="argument-cell">
+                        
+                            count
+                        
+                    </td>
+                    <td>Removes a certain number of recently sent mentions in the chat.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">prune images</td>
+                    <td class="argument-cell">
+                        
+                            count
+                        
+                    </td>
+                    <td>Removes a certain number of recently sent images in the chat.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">prune all</td>
+                    <td class="argument-cell">
+                        
+                            count
+                        
+                    </td>
+                    <td>Removes every recently sent message.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">prune user</td>
+                    <td class="argument-cell">
+                        
+                            count
+                        
+                    </td>
+                    <td>Removes a certain number of recently sent messages by a member.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">prune contains</td>
+                    <td class="argument-cell">
+                        
+                            count
+                        
+                    </td>
+                    <td>Removes a certain number of recently sent messages that contain a phrase.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">prune bots</td>
+                    <td class="argument-cell">
+                        
+                            count
+                        
+                    </td>
+                    <td>Removes a certain number of recently sent messages by bots.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">prune users</td>
+                    <td class="argument-cell">
+                        
+                            count
+                        
+                    </td>
+                    <td>Removes a certain number of recently sent messages by users.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">prune reactions</td>
+                    <td class="argument-cell">
+                        
+                            count
+                        
+                    </td>
+                    <td>Removes a certain number of recently added reactions.</td>
+                </tr>
+            
+        
+            <tr id="fun">
+                <td colspan="3" class="chapter">Fun</td>
+            </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">network</td>
+                    <td class="argument-cell">
+                        
+                            member
+                        
+                    </td>
+                    <td>Returns the most frequent chat encounters of a member graphically.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">wordcloud</td>
+                    <td class="argument-cell">
+                        
+                            member, min word length
+                        
+                    </td>
+                    <td>Returns a wordcloud that shows the most frequently used words by a member graphically.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">wordcloudserver</td>
+                    <td class="argument-cell">
+                        
+                            min word length
+                        
+                    </td>
+                    <td>Returns a wordcloud that shows the most frequently used words in the server graphically.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">said</td>
+                    <td class="argument-cell">
+                        
+                            word
+                        
+                    </td>
+                    <td>Returns members who most frequently used the word.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">rewind</td>
+                    <td class="argument-cell">
+                        
+                            member, year
+                        
+                    </td>
+                    <td>Returns an embed with clickable rewind pictures and stats of a year.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">rewindserver</td>
+                    <td class="argument-cell">
+                        
+                            year
+                        
+                    </td>
+                    <td>Returns an embed with clickable rewind pictures and stats of a year.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">quote</td>
+                    <td class="argument-cell">
+                        
+                            member, word/phrase
+                        
+                    </td>
+                    <td>Returns a random message (by a member) that contains a certain phrase or word.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">snipe</td>
+                    <td class="argument-cell">
+                        
+                            member
+                        
+                    </td>
+                    <td>Returns the last deleted message (by a member).</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">snip</td>
+                    <td class="argument-cell">
+                        
+                            member
+                        
+                    </td>
+                    <td>Returns the last edited message (by a member).</td>
+                </tr>
+            
+        
+            <tr id="voicechat">
+                <td colspan="3" class="chapter">Voicechat</td>
+            </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">massmove</td>
+                    <td class="argument-cell">
+                        
+                            voice channel
+                        
+                    </td>
+                    <td>Moves members in the current channel to a certain channel.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell">massmoveall</td>
+                    <td class="argument-cell">
+                        
+                            voice channel
+                        
+                    </td>
+                    <td>Moves all members who are in a voice channel to a certain channel.</td>
+                </tr>
+            
+        
+    </table>
+    <button class="scroll-to-top-btn" onclick="scrollToTop()">To Top</button>
+    <script src="/static/script.js"></script>
+</body>
+</html>
