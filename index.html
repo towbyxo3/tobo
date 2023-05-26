@@ -3,21 +3,17 @@
 <head>
     <title>Command List</title>
     <link rel="stylesheet" type="text/css" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Command List</h1>
-    </header>
-
-    <div class="search-bar">
-        <input type="text" class="search-input" placeholder="Search command...">
-        <button class="clear-search-btn">&times;</button>
+    <div class="bar">
+        <a href="https://github.com/towbyxo3/slant-python-discord-bot" target="_blank" class="bar-item">Github</a>
+        <a href="https://github.com/towbyxo3" target="_blank" class="bar-item">towbyxo3</a>
     </div>
+
 
     <div class="chapter-bar">
         <ul class="chapter-list">
-            
-                <li><a href="#admin">Admin</a></li>
             
                 <li><a href="#info">Info</a></li>
             
@@ -29,598 +25,335 @@
             
                 <li><a href="#voicechat">Voicechat</a></li>
             
+                <li><a href="#admin">Admin</a></li>
+            
         </ul>
     </div>
-
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Search command...">
+    </div>
     <table>
         <tr>
-            <th style="width: 10%;">Command</th>
-            <th style="width: 10%;">Arguments</th>
-            <th style="width: 60%;">Description</th>
+            <th class="command-text">Command</th>
+            <th class="description-text">Description</th>
         </tr>
         
-            <tr id="admin">
-                <td colspan="3" class="chapter">Admin</td>
-            </tr>
-            
-                <tr class="command-row">
-                    <td class="command-cell">owner</td>
-                    <td class="argument-cell">
-                        
-                            &nbsp;
-                        
-                    </td>
-                    <td>Returns the owner.</td>
-                </tr>
-            
-                <tr class="command-row">
-                    <td class="command-cell">load</td>
-                    <td class="argument-cell">
-                        
-                            cog name
-                        
-                    </td>
-                    <td>Loads an extension.</td>
-                </tr>
-            
-                <tr class="command-row">
-                    <td class="command-cell">unload</td>
-                    <td class="argument-cell">
-                        
-                            cog name
-                        
-                    </td>
-                    <td>Unloads an extension.</td>
-                </tr>
-            
-                <tr class="command-row">
-                    <td class="command-cell">reload</td>
-                    <td class="argument-cell">
-                        
-                            cog name
-                        
-                    </td>
-                    <td>Reloads an extension.</td>
-                </tr>
-            
-                <tr class="command-row">
-                    <td class="command-cell">reloadall</td>
-                    <td class="argument-cell">
-                        
-                            &nbsp;
-                        
-                    </td>
-                    <td>Reloads all extensions.</td>
-                </tr>
-            
-                <tr class="command-row">
-                    <td class="command-cell">reloadutils</td>
-                    <td class="argument-cell">
-                        
-                            util name
-                        
-                    </td>
-                    <td>Reloads utils.</td>
-                </tr>
-            
-                <tr class="command-row">
-                    <td class="command-cell">change playing</td>
-                    <td class="argument-cell">
-                        
-                            status
-                        
-                    </td>
-                    <td>Change the status of the bot.</td>
-                </tr>
-            
-                <tr class="command-row">
-                    <td class="command-cell">change username</td>
-                    <td class="argument-cell">
-                        
-                            username
-                        
-                    </td>
-                    <td>Change the username of the bot.</td>
-                </tr>
-            
-                <tr class="command-row">
-                    <td class="command-cell">change nickname</td>
-                    <td class="argument-cell">
-                        
-                            nickname
-                        
-                    </td>
-                    <td>Change the nickname of the bot.</td>
-                </tr>
-            
-                <tr class="command-row">
-                    <td class="command-cell">change avatar</td>
-                    <td class="argument-cell">
-                        
-                            picture url/file
-                        
-                    </td>
-                    <td>Change the avatar of the bot.</td>
-                </tr>
-            
-        
             <tr id="info">
-                <td colspan="3" class="chapter">Info</td>
+                <td colspan="2" class="chapter">Info</td>
             </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">avatar</td>
-                    <td class="argument-cell">
-                        
-                            member
-                        
-                    </td>
-                    <td>Displays the current and past profile pictures of members.</td>
+                    <td class="command-cell" data-command-text="avatar">!avatar</td>
+                    <td class="description-cell">Displays the current and past profile pictures of members.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">serverinfo</td>
-                    <td class="argument-cell">
-                        
-                            &nbsp;
-                        
-                    </td>
-                    <td>Returns information about the current server.</td>
+                    <td class="command-cell" data-command-text="serverinfo">!serverinfo</td>
+                    <td class="description-cell">Returns information about the current server.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">userinfo</td>
-                    <td class="argument-cell">
-                        
-                            member
-                        
-                    </td>
-                    <td>Returns information about the user.</td>
+                    <td class="command-cell" data-command-text="userinfo">!userinfo</td>
+                    <td class="description-cell">Returns information about the user.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">names</td>
-                    <td class="argument-cell">
-                        
-                            member
-                        
-                    </td>
-                    <td>Returns the previous usernames/nicknames of the user.</td>
+                    <td class="command-cell" data-command-text="names">!names</td>
+                    <td class="description-cell">Returns the previous usernames/nicknames of the user.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">banner</td>
-                    <td class="argument-cell">
-                        
-                            member
-                        
-                    </td>
-                    <td>Returns the banner of the user.</td>
+                    <td class="command-cell" data-command-text="banner">!banner</td>
+                    <td class="description-cell">Returns the banner of the user.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">collectavatars</td>
-                    <td class="argument-cell">
-                        
-                            &nbsp;
-                        
-                    </td>
-                    <td>Stores avatars of members in the current guild.</td>
+                    <td class="command-cell" data-command-text="collectavatars">!collectavatars</td>
+                    <td class="description-cell">Stores avatars of members in the current guild.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">about</td>
-                    <td class="argument-cell">
-                        
-                            &nbsp;
-                        
-                    </td>
-                    <td>Returns stats and information about the bot.</td>
+                    <td class="command-cell" data-command-text="about">!about</td>
+                    <td class="description-cell">Returns stats and information about the bot.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">ping</td>
-                    <td class="argument-cell">
-                        
-                            &nbsp;
-                        
-                    </td>
-                    <td>Returns the ping of the bot.</td>
+                    <td class="command-cell" data-command-text="ping">!ping</td>
+                    <td class="description-cell">Returns the ping of the bot.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">invite</td>
-                    <td class="argument-cell">
-                        
-                            &nbsp;
-                        
-                    </td>
-                    <td>Returns the invite link for the current server.</td>
+                    <td class="command-cell" data-command-text="invite">!invite</td>
+                    <td class="description-cell">Returns the invite link for the current server.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">myservers</td>
-                    <td class="argument-cell">
-                        
-                            &nbsp;
-                        
-                    </td>
-                    <td>Prints invite links to the bot&#39;s servers in the console.</td>
+                    <td class="command-cell" data-command-text="myservers">!myservers</td>
+                    <td class="description-cell">Prints invite links to the bot&#39;s servers in the console.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">github</td>
-                    <td class="argument-cell">
-                        
-                            &nbsp;
-                        
-                    </td>
-                    <td>Returns the link to this GitHub repository.</td>
+                    <td class="command-cell" data-command-text="github">!github</td>
+                    <td class="description-cell">Returns the link to this GitHub repository.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">covid</td>
-                    <td class="argument-cell">
-                        
-                            country
-                        
-                    </td>
-                    <td>Returns COVID statistics of a country.</td>
+                    <td class="command-cell" data-command-text="covid">!covid</td>
+                    <td class="description-cell">Returns COVID statistics of a country.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">country</td>
-                    <td class="argument-cell">
-                        
-                            country
-                        
-                    </td>
-                    <td>Returns general information about a country.</td>
+                    <td class="command-cell" data-command-text="country">!country</td>
+                    <td class="description-cell">Returns general information about a country.</td>
                 </tr>
             
         
             <tr id="leaderboard">
-                <td colspan="3" class="chapter">Leaderboard</td>
+                <td colspan="2" class="chapter">Leaderboard</td>
             </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">crowns</td>
-                    <td class="argument-cell">
-                        
-                            member
-                        
-                    </td>
-                    <td>Displays members with the most crowns.</td>
+                    <td class="command-cell" data-command-text="crowns">!crowns</td>
+                    <td class="description-cell">Displays members with the most crowns.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">age</td>
-                    <td class="argument-cell">
-                        
-                            &nbsp;
-                        
-                    </td>
-                    <td>Displays the youngest or oldest members based on a criteria.</td>
+                    <td class="command-cell" data-command-text="age">!age</td>
+                    <td class="description-cell">Displays the youngest or oldest members based on a criteria.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">chat</td>
-                    <td class="argument-cell">
-                        
-                            member
-                        
-                    </td>
-                    <td>Displays members with the most messages in selected timeframe.</td>
+                    <td class="command-cell" data-command-text="chat">!chat</td>
+                    <td class="description-cell">Displays members with the most messages in selected timeframe.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">mentions</td>
-                    <td class="argument-cell">
-                        
-                            member
-                        
-                    </td>
-                    <td>Displays mention leaderboard and stats of the server and member.</td>
+                    <td class="command-cell" data-command-text="mentions">!mentions</td>
+                    <td class="description-cell">Displays mention leaderboard and stats of the server and member.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">serverpeak</td>
-                    <td class="argument-cell">
-                        
-                            &nbsp;
-                        
-                    </td>
-                    <td>Displays timeframes where most messages were sent in the server.</td>
+                    <td class="command-cell" data-command-text="serverpeak">!serverpeak</td>
+                    <td class="description-cell">Displays timeframes where most messages were sent in the server.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">userpeak</td>
-                    <td class="argument-cell">
-                        
-                            member
-                        
-                    </td>
-                    <td>Displays timeframes where a member sent the most messages in the server.</td>
+                    <td class="command-cell" data-command-text="userpeak">!userpeak</td>
+                    <td class="description-cell">Displays timeframes where a member sent the most messages in the server.</td>
                 </tr>
             
         
             <tr id="mod">
-                <td colspan="3" class="chapter">Mod</td>
+                <td colspan="2" class="chapter">Mod</td>
             </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">kick</td>
-                    <td class="argument-cell">
-                        
-                            member
-                        
-                    </td>
-                    <td>Kicks a member from the server.</td>
+                    <td class="command-cell" data-command-text="kick">!kick</td>
+                    <td class="description-cell">Kicks a member from the server.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">nickname</td>
-                    <td class="argument-cell">
-                        
-                            member
-                        
-                    </td>
-                    <td>Changes the nickname of a member.</td>
+                    <td class="command-cell" data-command-text="nickname">!nickname</td>
+                    <td class="description-cell">Changes the nickname of a member.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">ban</td>
-                    <td class="argument-cell">
-                        
-                            member
-                        
-                    </td>
-                    <td>Bans a member from the server.</td>
+                    <td class="command-cell" data-command-text="ban">!ban</td>
+                    <td class="description-cell">Bans a member from the server.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">massban</td>
-                    <td class="argument-cell">
-                        
-                            member, member, ..
-                        
-                    </td>
-                    <td>Bans several members from the server.</td>
+                    <td class="command-cell" data-command-text="massban">!massban</td>
+                    <td class="description-cell">Bans several members from the server.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">unban</td>
-                    <td class="argument-cell">
-                        
-                            member.id
-                        
-                    </td>
-                    <td>Unbans a user from the server.</td>
+                    <td class="command-cell" data-command-text="unban">!unban</td>
+                    <td class="description-cell">Unbans a user from the server.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">prune embeds</td>
-                    <td class="argument-cell">
-                        
-                            count
-                        
-                    </td>
-                    <td>Removes a certain number of recently sent embeds in the chat.</td>
+                    <td class="command-cell" data-command-text="prune embeds">!prune embeds</td>
+                    <td class="description-cell">Removes a certain number of recently sent embeds in the chat.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">prune files</td>
-                    <td class="argument-cell">
-                        
-                            count
-                        
-                    </td>
-                    <td>Removes a certain number of recently sent files in the chat.</td>
+                    <td class="command-cell" data-command-text="prune files">!prune files</td>
+                    <td class="description-cell">Removes a certain number of recently sent files in the chat.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">prune mentions</td>
-                    <td class="argument-cell">
-                        
-                            count
-                        
-                    </td>
-                    <td>Removes a certain number of recently sent mentions in the chat.</td>
+                    <td class="command-cell" data-command-text="prune mentions">!prune mentions</td>
+                    <td class="description-cell">Removes a certain number of recently sent mentions in the chat.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">prune images</td>
-                    <td class="argument-cell">
-                        
-                            count
-                        
-                    </td>
-                    <td>Removes a certain number of recently sent images in the chat.</td>
+                    <td class="command-cell" data-command-text="prune images">!prune images</td>
+                    <td class="description-cell">Removes a certain number of recently sent images in the chat.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">prune all</td>
-                    <td class="argument-cell">
-                        
-                            count
-                        
-                    </td>
-                    <td>Removes every recently sent message.</td>
+                    <td class="command-cell" data-command-text="prune all">!prune all</td>
+                    <td class="description-cell">Removes every recently sent message.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">prune user</td>
-                    <td class="argument-cell">
-                        
-                            count
-                        
-                    </td>
-                    <td>Removes a certain number of recently sent messages by a member.</td>
+                    <td class="command-cell" data-command-text="prune user">!prune user</td>
+                    <td class="description-cell">Removes a certain number of recently sent messages by a member.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">prune contains</td>
-                    <td class="argument-cell">
-                        
-                            count
-                        
-                    </td>
-                    <td>Removes a certain number of recently sent messages that contain a phrase.</td>
+                    <td class="command-cell" data-command-text="prune contains">!prune contains</td>
+                    <td class="description-cell">Removes a certain number of recently sent messages that contain a phrase.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">prune bots</td>
-                    <td class="argument-cell">
-                        
-                            count
-                        
-                    </td>
-                    <td>Removes a certain number of recently sent messages by bots.</td>
+                    <td class="command-cell" data-command-text="prune bots">!prune bots</td>
+                    <td class="description-cell">Removes a certain number of recently sent messages by bots.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">prune users</td>
-                    <td class="argument-cell">
-                        
-                            count
-                        
-                    </td>
-                    <td>Removes a certain number of recently sent messages by users.</td>
+                    <td class="command-cell" data-command-text="prune users">!prune users</td>
+                    <td class="description-cell">Removes a certain number of recently sent messages by users.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">prune reactions</td>
-                    <td class="argument-cell">
-                        
-                            count
-                        
-                    </td>
-                    <td>Removes a certain number of recently added reactions.</td>
+                    <td class="command-cell" data-command-text="prune reactions">!prune reactions</td>
+                    <td class="description-cell">Removes a certain number of recently added reactions.</td>
                 </tr>
             
         
             <tr id="fun">
-                <td colspan="3" class="chapter">Fun</td>
+                <td colspan="2" class="chapter">Fun</td>
             </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">network</td>
-                    <td class="argument-cell">
-                        
-                            member
-                        
-                    </td>
-                    <td>Returns the most frequent chat encounters of a member graphically.</td>
+                    <td class="command-cell" data-command-text="network">!network</td>
+                    <td class="description-cell">Returns the most frequent chat encounters of a member graphically.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">wordcloud</td>
-                    <td class="argument-cell">
-                        
-                            member, min word length
-                        
-                    </td>
-                    <td>Returns a wordcloud that shows the most frequently used words by a member graphically.</td>
+                    <td class="command-cell" data-command-text="wordcloud">!wordcloud</td>
+                    <td class="description-cell">Returns a wordcloud that shows the most frequently used words by a member graphically.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">wordcloudserver</td>
-                    <td class="argument-cell">
-                        
-                            min word length
-                        
-                    </td>
-                    <td>Returns a wordcloud that shows the most frequently used words in the server graphically.</td>
+                    <td class="command-cell" data-command-text="wordcloudserver">!wordcloudserver</td>
+                    <td class="description-cell">Returns a wordcloud that shows the most frequently used words in the server graphically.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">said</td>
-                    <td class="argument-cell">
-                        
-                            word
-                        
-                    </td>
-                    <td>Returns members who most frequently used the word.</td>
+                    <td class="command-cell" data-command-text="said">!said</td>
+                    <td class="description-cell">Returns members who most frequently used the word.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">rewind</td>
-                    <td class="argument-cell">
-                        
-                            member, year
-                        
-                    </td>
-                    <td>Returns an embed with clickable rewind pictures and stats of a year.</td>
+                    <td class="command-cell" data-command-text="rewind">!rewind</td>
+                    <td class="description-cell">Returns an embed with clickable rewind pictures and stats of a year.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">rewindserver</td>
-                    <td class="argument-cell">
-                        
-                            year
-                        
-                    </td>
-                    <td>Returns an embed with clickable rewind pictures and stats of a year.</td>
+                    <td class="command-cell" data-command-text="rewindserver">!rewindserver</td>
+                    <td class="description-cell">Returns an embed with clickable rewind pictures and stats of a year.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">quote</td>
-                    <td class="argument-cell">
-                        
-                            member, word/phrase
-                        
-                    </td>
-                    <td>Returns a random message (by a member) that contains a certain phrase or word.</td>
+                    <td class="command-cell" data-command-text="quote">!quote</td>
+                    <td class="description-cell">Returns a random message (by a member) that contains a certain phrase or word.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">snipe</td>
-                    <td class="argument-cell">
-                        
-                            member
-                        
-                    </td>
-                    <td>Returns the last deleted message (by a member).</td>
+                    <td class="command-cell" data-command-text="snipe">!snipe</td>
+                    <td class="description-cell">Returns the last deleted message (by a member).</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">snip</td>
-                    <td class="argument-cell">
-                        
-                            member
-                        
-                    </td>
-                    <td>Returns the last edited message (by a member).</td>
+                    <td class="command-cell" data-command-text="snip">!snip</td>
+                    <td class="description-cell">Returns the last edited message (by a member).</td>
                 </tr>
             
         
             <tr id="voicechat">
-                <td colspan="3" class="chapter">Voicechat</td>
+                <td colspan="2" class="chapter">Voicechat</td>
             </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">massmove</td>
-                    <td class="argument-cell">
-                        
-                            voice channel
-                        
-                    </td>
-                    <td>Moves members in the current channel to a certain channel.</td>
+                    <td class="command-cell" data-command-text="massmove">!massmove</td>
+                    <td class="description-cell">Moves members in the current channel to a certain channel.</td>
                 </tr>
             
                 <tr class="command-row">
-                    <td class="command-cell">massmoveall</td>
-                    <td class="argument-cell">
-                        
-                            voice channel
-                        
-                    </td>
-                    <td>Moves all members who are in a voice channel to a certain channel.</td>
+                    <td class="command-cell" data-command-text="massmoveall">!massmoveall</td>
+                    <td class="description-cell">Moves all members who are in a voice channel to a certain channel.</td>
+                </tr>
+            
+        
+            <tr id="admin">
+                <td colspan="2" class="chapter">Admin</td>
+            </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell" data-command-text="owner">!owner</td>
+                    <td class="description-cell">Returns the owner.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell" data-command-text="load">!load</td>
+                    <td class="description-cell">Loads an extension.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell" data-command-text="unload">!unload</td>
+                    <td class="description-cell">Unloads an extension.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell" data-command-text="reload">!reload</td>
+                    <td class="description-cell">Reloads an extension.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell" data-command-text="reloadall">!reloadall</td>
+                    <td class="description-cell">Reloads all extensions.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell" data-command-text="reloadutils">!reloadutils</td>
+                    <td class="description-cell">Reloads utils.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell" data-command-text="change playing">!change playing</td>
+                    <td class="description-cell">Change the status of the bot.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell" data-command-text="change username">!change username</td>
+                    <td class="description-cell">Change the username of the bot.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell" data-command-text="change nickname">!change nickname</td>
+                    <td class="description-cell">Change the nickname of the bot.</td>
+                </tr>
+            
+                <tr class="command-row">
+                    <td class="command-cell" data-command-text="change avatar">!change avatar</td>
+                    <td class="description-cell">Change the avatar of the bot.</td>
                 </tr>
             
         
     </table>
-    <button class="scroll-to-top-btn" onclick="scrollToTop()">To Top</button>
+    <button class="scroll-to-top-btn" onclick="scrollToTop()">↑</button>
+
+
+    <footer class="fixed-footer">
+        <div class="footer-content">
+            <div class="copyright">
+                &copy; 2023 towbyxo3
+            </div>
+        </div>
+    </footer>
     <script src="static/script.js"></script>
 </body>
 </html>

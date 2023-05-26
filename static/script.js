@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         commandRows.forEach((row) => {
             const commandCell = row.querySelector('.command-cell');
-            const argumentCell = row.querySelector('.argument-cell');
+            const description = row.querySelector('.description-cell');
 
             const commandText = commandCell.textContent.toLowerCase();
-            const argumentText = argumentCell.textContent.toLowerCase();
+            const argumentText = description.textContent.toLowerCase();
 
             const commandMatch = commandText.includes(searchTerm);
             const argumentMatch = argumentText.includes(searchTerm);
@@ -71,3 +71,4 @@ function scrollToTop() {
         behavior: 'smooth'
     });
 }
+
